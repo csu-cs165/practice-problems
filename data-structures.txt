@@ -1,0 +1,64 @@
+ArrayList vs LinkedList
+
+What are the advantages of an ArrayList?
+
+What are the advantages of an LinkedList?
+
+What are the disadvantages of an ArrayList?
+
+What are the disadvantages of an LinkedList?
+
+
+Singly vs Doubly linked lists
+
+Are java.util.LinkedList objects singly or doubly linked?
+
+What are the disadvantages of singly linked lists?
+
+Are there any advantages?
+
+
+What is java.util.Collection?
+
+What is java.util.Collections?
+
+What is a java.util.Iterator?
+
+What does it mean for a class to implement java.util.Iterable?
+
+What is the relationship between java.util.List and java.util.Collection?
+
+What does a java.util.ListIterator do in addition to the methods defined in java.util.Iterator?
+
+
+What does it mean if a class implements java.lang.Comparable?
+
+What functions (methods) anywhere in the standard library rely on objects implementing java.lang.Comparable?
+
+When implementing the method from the Comparable interface, is the argument of type Object (like equals) or a generic?
+
+If a class implements Comparable, is it ever useful to define a java.util.Comparator for objects of that class?
+
+What functions (methods) anywhere in the standard library can take java.util.Comparator arguments?
+
+
+What is java.util.Queue and what relationships does it have with other entities?
+
+The java.util.LinkedList class implements java.util.Deque (Double Ended queue). Why does it make sense for LinkedList to do this, but not ArrayList? (technical reasons, philosophical, or ...?)
+
+Give three examples of real life situations that is similar to a priority queue.
+
+How does java.util.PriorityQueue know which elements (items in the queue) should take priority over others?
+  - What are the two interfaces involved in this process of deciding priority?
+  - Which of the two approaches allows you to define different policies for deciding priority for different PriorityQueue objects?
+  - Does using a PriorityQueue mean your class needs to have an integer (or double) member variable that represents the object's priority? (think about how the priority queue relates to sorting)
+
+
+A list can be implemented efficiently using an array. The only problem is when the array runs out of empty spaces, you have to allocate a new bigger array, and copy the existing elements (items in the list) to the new array. Why do we generally double the size of the array instead of, say, just making an array with ten extra spaces? (think about large arrays)
+
+When implementing a stack using an ArrayList, you can choose to extend ArrayList (thus your stack will be able to do everything an ArrayList can and more) or to create a member variable to hold an ArrayList (so your stack will only have the methods you explicitly define). In both cases, you will be free to call the ArrayList methods in the implementation of your stack-specific methods.
+  - What are the advantages of the inheritance approach?
+  - What are the advantages of the composition approach? (it's called composition because the stack is composed of (built with) an ArrayList)
+  - What are the disadvantages of the inheritance approach?
+  - What are the disadvantages of the composition approach?
+
