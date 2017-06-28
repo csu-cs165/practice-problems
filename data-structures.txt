@@ -44,7 +44,8 @@ What functions (methods) anywhere in the standard library can take java.util.Com
 
 What is java.util.Queue and what relationships does it have with other entities?
 
-The java.util.LinkedList class implements java.util.Deque (Double Ended queue). Why does it make sense for LinkedList to do this, but not ArrayList? (technical reasons, philosophical, or ...?)
+The java.util.LinkedList class implements java.util.Deque (Double Ended queue).
+Why does it make sense for LinkedList to do this, but not ArrayList? (technical reasons, philosophical, or ...?)
 
 Give three examples of real life situations that is similar to a priority queue.
 
@@ -54,11 +55,25 @@ How does java.util.PriorityQueue know which elements (items in the queue) should
   - Does using a PriorityQueue mean your class needs to have an integer (or double) member variable that represents the object's priority? (think about how the priority queue relates to sorting)
 
 
-A list can be implemented efficiently using an array. The only problem is when the array runs out of empty spaces, you have to allocate a new bigger array, and copy the existing elements (items in the list) to the new array. Why do we generally double the size of the array instead of, say, just making an array with ten extra spaces? (think about large arrays)
+A list can be implemented efficiently using an array. The only problem is when the array runs out of empty spaces,
+you have to allocate a new bigger array, and copy the existing elements (items in the list) to the new array.
+Why do we generally double the size of the array instead of, say, just making an array with ten extra spaces?
+(think about large arrays)
 
-When implementing a stack using an ArrayList, you can choose to extend ArrayList (thus your stack will be able to do everything an ArrayList can and more) or to create a member variable to hold an ArrayList (so your stack will only have the methods you explicitly define). In both cases, you will be free to call the ArrayList methods in the implementation of your stack-specific methods.
+When implementing a stack using an ArrayList, you can choose to extend ArrayList (thus your stack will be able
+to do everything an ArrayList can and more) or to create a member variable to hold an ArrayList (so your stack
+will only have the methods you explicitly define). In both cases, you will be free to call the ArrayList
+methods in the implementation of your stack-specific methods.
   - What are the advantages of the inheritance approach?
   - What are the advantages of the composition approach? (it's called composition because the stack is composed of (built with) an ArrayList)
   - What are the disadvantages of the inheritance approach?
   - What are the disadvantages of the composition approach?
+
+
+On a stack data structure (such as java.util.Stack), what is the difference between the pop() method and the peek() method?
+
+Concerning the methods defined in java.util.Queue (see the javadoc for reference), what is the difference between:
+  - offer(E e) and add(E e) ?
+  - poll() and remove() ?
+  - peek() and element() ?
 

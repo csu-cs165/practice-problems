@@ -1,2 +1,3 @@
-As of Java 8, interfaces can contain concrete (not abstract) methods which have a default implementation given. Does this mean that abstract classes are no longer useful?
+As of Java 8, interfaces can contain concrete (not abstract) methods which have a default implementation given.
+Does this mean that abstract classes are no longer useful?
 
